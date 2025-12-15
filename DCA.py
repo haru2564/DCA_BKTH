@@ -25,7 +25,7 @@ current_millis = int(time.time() * 1000)
 client_id_string = str(current_millis)
 payload = {
 "sym":"btc_thb",  # คู่เหรียญที่ต้องการซื้อ
-"amt":10.0,       # จำนวนเงิน THB ที่ต้องการใช้ซื้อ (100 บาท)
+"amt":108.0,       # จำนวนเงิน THB ที่ต้องการใช้ซื้อ (100 บาท)
 "rat":0.0,        # ราคา Rate ต่อ BTC ที่ต้องการซื้อ
 "typ":"market",   # ชนิดคำสั่ง: 'limit' หรือ 'market'
 "client_id":client_id_string,
@@ -82,4 +82,5 @@ try:
         print("Response Error:", response.text)
 
 except Exception as e:
+
     print(f"\n⚠️ เกิดข้อผิดพลาดที่ไม่คาดคิด: {e}")
