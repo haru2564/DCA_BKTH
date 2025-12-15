@@ -82,5 +82,5 @@ try:
         print("Response Error:", response.text)
 
 except Exception as e:
-
     print(f"\n⚠️ เกิดข้อผิดพลาดที่ไม่คาดคิด: {e}")
+
